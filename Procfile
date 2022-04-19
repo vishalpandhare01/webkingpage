@@ -1,0 +1,1 @@
+web: gunicorn webking.wsgi --log-file -
