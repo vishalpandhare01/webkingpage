@@ -78,13 +78,8 @@ WSGI_APPLICATION = 'webking.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'webking',
-        'NAME': 'survey',
-        'USER':'postgres',
-        'PASSWORD':'Vishal@4162',
-        'HOST': '127.0.0.1',
-        'PORT': '5432'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
        
     }
 }
