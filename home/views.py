@@ -18,7 +18,7 @@ def reg(request):
         r.save()
         print('user created')
 
-        return redirect('index')
+        return redirect('index.html')
     return render(request,'auth/registration.html')
 
 def login(request):
@@ -27,9 +27,9 @@ def login(request):
         password=request.POST['password']
         user= authenticate(username=username,password=password)
         if user is not None:
-            return redirect('home')
+            return redirect('home.html')
         else:
-            return redirect('login')
+            return redirect('login.html')
 
 
     return render(request,'auth/login.html')
