@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-&l5kbs^(4akm)k^t!nx45blm7$=7zqoydcc#5p=$#79!tmk666'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1','webking09.herokuapp.com']
 APPEND_SLASH=False 
@@ -83,8 +83,9 @@ DATABASES = {
         'NAME': 'survey',
         'USER':'postgres',
         'PASSWORD':'Vishal@4162',
-        'HOST':'127.0.0.1',
-        'port': ''
+        'HOST': '127.0.0.1',
+        'PORT': '5432'
+       
     }
 }
 
