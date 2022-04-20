@@ -27,7 +27,8 @@ def survey(request):
          )
       form.save()
       print('data submited')
-     
+      return render(request,'thx.html')
 
     
    return render(request,'form.html')
+
